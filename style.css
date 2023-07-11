@@ -1,371 +1,328 @@
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(225, 225, 234);
-    font-size: 16px;
+body {
+  background-color: rgb(232, 232, 240);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
 
-/* ---------- MOBILE ----------- */
-
-.logo{
-    width: 313px;
-    margin: 70px auto 0;
+.logo {
+  width: 313px;
+  margin: 70px auto 0;
+}
+.logo img {
+  width: 313px;
 }
 
-.logo img{
-    width: 313px;
+.contenedor-ppal {
+  background-color: white;
+  width: 313px;
+  height: 680px;
+  margin: 20px auto 70px;
+  border-radius: 8px;
+  overflow: hidden;
 }
-
-.contenedor-ppal{
-    background-color: white;
-    width: 313px;
-    height: 680px;
-    margin: 20px auto 70px;
-    border-radius: 8px;
-    overflow: hidden;
+.contenedor-ppal .comunidad {
+  padding: 8px 24px 24px 24px;
+  height: 230px;
+  box-sizing: border-box;
 }
-
-/* ------- Comunidad --------- */
-.comunidad{
-    padding: 8px 24px 24px 24px;
-    height: 230px;
-    box-sizing: border-box;
+.contenedor-ppal .comunidad .titulo {
+  font-size: 1.5em;
+  color: rgb(0, 167, 228);
 }
-
-.comunidad h2.titulo{
-    font-size: 1.5em;
-    color: rgb(0, 167, 228);
+.contenedor-ppal .comunidad .promocion {
+  color: rgb(190, 190, 36);
+  font-size: 1em;
+  margin: 20px 0 10px 0;
 }
-
-.comunidad h2.promocion{
-    color: rgb(190, 190, 36);
-    font-size: 1em;
-    margin: 20px 0 10px 0;
+.contenedor-ppal .comunidad p {
+  color: rgb(59, 57, 87);
+  font-size: 0.86em;
+  line-height: 27px;
+  margin-top: 16px;
 }
-
-.comunidad p{
-    color: rgb(59, 57, 87);
-    font-size: 0.86em;
-    line-height: 27px;
-    margin-top: 16px;
+.contenedor-ppal .subs-mensual {
+  background-color: rgb(27, 99, 117);
+  padding: 12px 24px 24px 24px;
+  height: 250px;
+  box-sizing: border-box;
+  color: white;
+  animation-name: destaque-precio;
+  animation-duration: 5s;
 }
-
-
-/* ---------- Subscripción mensual -------- */
-
-.subs-mensual{
+@keyframes destaque-precio {
+  from {
+    background-color: rgb(236, 130, 60);
+  }
+  to {
     background-color: rgb(27, 99, 117);
-    padding: 12px 24px 24px 24px;
-    height: 250px;
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
+  }
 }
-
-.subs-mensual h2{
-    font-size: 1em;
-    margin-bottom: 18px;
+.contenedor-ppal .subs-mensual h2 {
+  font-size: 1em;
+  margin-bottom: 18px;
 }
-
-.precio{
-    font-size: 2em;
-    font-weight: 700;
+.contenedor-ppal .subs-mensual .precio {
+  font-size: 2em;
+  font-weight: 700;
 }
-
-.subs-mensual p{
-    margin-top: 8px;
+.contenedor-ppal .subs-mensual p {
+  margin-top: 8px;
 }
-
-button{
-    margin-top: 14px;
-    background-color: rgb(174, 174, 31);
-    border-radius: 5px;
-    width: 100%;
-    height: 48px;
-    border-style: none;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-    font-weight: 700;
+.contenedor-ppal .subs-mensual button {
+  margin-top: 14px;
+  background-color: rgb(174, 174, 31);
+  border-radius: 5px;
+  width: 100%;
+  height: 48px;
+  border-style: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
 }
-
-button a{
-    text-decoration: none;
-    color: white;
+.contenedor-ppal .subs-mensual button:hover {
+  background-color: rgb(130, 130, 26);
 }
-
-button:hover{
-    background-color: rgb(130, 130, 26);
+.contenedor-ppal .subs-mensual button a {
+  text-decoration: none;
+  color: white;
 }
-
-
-
-/* ---------- Porqué elegirnos ---------- */
-
-.nosotros{
+.contenedor-ppal .nosotros {
+  background-color: rgb(34, 68, 80);
+  padding: 8px 24px 24px 24px;
+  height: 230px;
+  box-sizing: border-box;
+  color: rgb(215, 215, 215);
+  animation-name: destaque-precio2;
+  animation-duration: 15s;
+}
+@keyframes destaque-precio2 {
+  from {
+    background-color: rgb(48, 60, 123);
+  }
+  to {
     background-color: rgb(34, 68, 80);
-    padding: 8px 24px 24px 24px;
-    height:230px;
-    box-sizing: border-box;
-    color: lightgray;
+  }
+}
+.contenedor-ppal .nosotros h2 {
+  font-size: 18px;
+}
+.contenedor-ppal .nosotros li {
+  font-size: 0.85em;
+  line-height: 20px;
+  font-weight: 400;
+  list-style: circle;
 }
 
-.nosotros h2{
-    font-size: 18px;
+footer .autor {
+  font-size: 11px;
+  text-align: center;
+}
+footer .autor a {
+  color: blue;
 }
 
-li{ 
-    font-size: 0.85em;
-    line-height: 20px;
-    font-weight: 400;
-    list-style: circle;
+.contenedor-registro {
+  background-color: rgb(213, 113, 26);
+  width: 313px;
+  height: 750px;
+  margin: 20px auto 70px;
+  border-radius: 8px;
+  overflow: hidden;
 }
-
-
-/* ----- Footer ------ */
-.autor{
-    font-size: 11px;
-    text-align: center;
+.contenedor-registro .paquete {
+  padding: 8px 24px 24px 24px;
+  height: 230px;
+  box-sizing: border-box;
 }
-.autor a{
-    color: blue;
+.contenedor-registro .paquete .title_pack {
+  font-size: 2em;
+  color: white;
+  margin: 30px 0 20px 0;
 }
-
-
-/* ---------- REGISTRO ---------- */
-
-.contenedor-registro{
-    background-color: rgb(213, 113, 26);
-    width: 313px;
-    height: 750px;
-    margin: 20px auto 70px;
-    border-radius: 8px;
-    overflow: hidden;
+.contenedor-registro .paquete .promo_registro {
+  color: rgb(254, 254, 50);
+  font-size: 1em;
+  margin: 10px 0 10px 0;
 }
-
-
-/* ------- Elige tu Paquete -------- */
-.paquete{
-    padding: 8px 24px 24px 24px;
-    height: 230px;
-    box-sizing: border-box;
+.contenedor-registro .paquete p {
+  color: white;
+  font-size: 1em;
+  line-height: 20px;
+  margin-top: 10px;
 }
-
-.paquete h2.title_pack{
-    font-size: 2em;
-    color: rgb(255, 255, 255);
-    margin: 30px 0 20px 0;
+.contenedor-registro .paquete_01 {
+  background-color: rgb(176, 93, 20);
+  padding: 12px 24px 24px 24px;
+  height: 250px;
+  box-sizing: border-box;
+  color: white;
+  animation-name: destaque-precio4;
+  animation-duration: 3s;
 }
-
-.paquete h2.promo_registro{
-    color: rgb(254, 254, 50);
-    font-size: 1em;
-    margin: 10px 0 10px 0;
-}
-
-.paquete p{
-    color: rgb(255, 255, 255);
-    font-size: 1em;
-    line-height: 20px;
-    margin-top: 10px;
-}
-
-/* ------------ Paquete 01 ------------- */
-
-.paquete_01{
+@keyframes destaque-precio4 {
+  from {
+    background-color: rgb(224, 143, 51);
+  }
+  to {
     background-color: rgb(176, 93, 20);
-    padding: 12px 24px 24px 24px;
-    height: 250px;
-    box-sizing: border-box;
-    color: rgb(215, 214, 233);
+  }
 }
-
-.paquete_01 h2{
-    font-size: 1.2em;
-    margin-bottom: 18px;
+.contenedor-registro .paquete_01 h2 {
+  font-size: 1.2em;
+  margin-bottom: 18px;
 }
-
-.precio{
-    font-size: 2em;
-    font-weight: 700;
+.contenedor-registro .paquete_01 .precio {
+  font-size: 2em;
+  font-weight: 700;
 }
-
-.paquete_01 p{
-    margin-top: 8px;
+.contenedor-registro .paquete_01 p {
+  margin-top: 8px;
 }
-
-.btn-registro{
-    margin-top: 10px;
-    background-color: rgb(252, 252, 252);
-    border-radius: 5px;
-    width: 100%;
-    height: 48px;
-    border-style: none;
-    color: rgb(228, 63, 26);
-    font-size: 16px;
-    font-weight: 700;
+.contenedor-registro .paquete_01 .btn-registro {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 48px;
+  border-style: none;
+  color: rgb(176, 93, 20);
+  font-size: 16px;
+  font-weight: 700;
 }
-
-.btn-registro:hover{
-    background-color: rgb(219, 219, 219);
+.contenedor-registro .paquete_01 .btn-registro:hover {
+  background-color: rgb(232, 232, 240);
 }
-
-/* ------------ Paquete 02 ------------- */
-
-.paquete_02{
+.contenedor-registro .paquete_02 {
+  background-color: rgb(25, 58, 97);
+  padding: 12px 24px 24px 24px;
+  height: 270px;
+  box-sizing: border-box;
+  color: white;
+  animation-name: destaque-precio3;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+@keyframes destaque-precio3 {
+  from {
+    background-color: rgb(29, 88, 159);
+  }
+  to {
     background-color: rgb(25, 58, 97);
-    padding: 12px 24px 24px 24px;
-    height: 270px;
-    box-sizing: border-box;
-    color: rgb(215, 214, 233);
+  }
+}
+.contenedor-registro .paquete_02 h2 {
+  font-size: 1.4em;
+  margin-bottom: 16px;
+}
+.contenedor-registro .paquete_02 .precio {
+  font-size: 2em;
+  font-weight: 700;
+}
+.contenedor-registro .paquete_02 p {
+  margin-top: 8px;
+}
+.contenedor-registro .paquete_02 .btn-registro {
+  margin-top: 6px;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 48px;
+  border-style: none;
+  color: rgb(176, 93, 20);
+  font-size: 16px;
+  font-weight: 700;
+}
+.contenedor-registro .paquete_02 .btn-registro:hover {
+  background-color: rgb(232, 232, 240);
 }
 
-.paquete_02 h2{
-    font-size: 1.4em;
-    margin-bottom: 16px;
-}
-
-.precio{
-    font-size: 2em;
-    font-weight: 700;
-}
-
-.paquete_02 p{
-    margin-top: 8px;
-}
-
-.btn-registro{
-    margin-top: 6px;
-    background-color: rgb(252, 252, 252);
-    border-radius: 5px;
+@media only screen and (min-width: 680px) {
+  .logo {
+    width: 400px;
+  }
+  .logo img {
     width: 100%;
-    height: 48px;
-    border-style: none;
-    color: rgb(228, 63, 26);
-    font-size: 16px;
-    font-weight: 700;
+  }
+  .contenedor-ppal {
+    width: 636px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px auto 80px;
+  }
+  .contenedor-ppal .comunidad {
+    grid-column: 1/3;
+    padding: 20px 35px 35px 35px;
+  }
+  .contenedor-ppal .comunidad .titulo {
+    font-size: 1.8em;
+  }
+  .contenedor-ppal .comunidad .promocion {
+    font-size: 1.1em;
+  }
+  .contenedor-ppal .comunidad p {
+    font-size: 1em;
+    line-height: 27px;
+    margin: 8px;
+  }
+  .contenedor-ppal .subs-mensual {
+    padding: 20px 40px 40px 40px;
+    height: 270px;
+  }
+  .contenedor-ppal .subs-mensual h2 {
+    font-size: 1.1em;
+  }
+  .contenedor-ppal .subs-mensual p {
+    font-size: 0.95em;
+  }
+  .contenedor-ppal .nosotros {
+    height: 270px;
+    padding: 20px 40px 40px 40px;
+  }
+  .contenedor-registro {
+    width: 636px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px auto 80px;
+  }
+  .contenedor-registro .paquete {
+    grid-column: 1/3;
+    padding: 20px 35px 35px 35px;
+  }
+  .contenedor-registro .paquete .title_pack {
+    font-size: 1.8em;
+  }
+  .contenedor-registro .paquete .promo_registro {
+    font-size: 1.1em;
+  }
+  .contenedor-registro .paquete p {
+    font-size: 1em;
+    line-height: 27px;
+    margin: 8px;
+  }
+  .contenedor-registro .paquete_01 {
+    padding: 20px 40px 40px 40px;
+    height: 270px;
+  }
+  .contenedor-registro .paquete_01 h2 {
+    font-size: 1.1em;
+  }
+  .contenedor-registro .paquete_01 p {
+    font-size: 0.95em;
+  }
+  .contenedor-registro .paquete_02 {
+    height: 270px;
+    padding: 20px 40px 40px 40px;
+  }
+  .contenedor-registro .paquete_02 h2 {
+    font-size: 1.1em;
+  }
+  .contenedor-registro .paquete_02 p {
+    font-size: 0.95em;
+  }
 }
 
-.btn-registro:hover{
-    background-color: rgb(219, 219, 219);
-}
-
-
-
-
-/* -------------- DESKTOP ----------------- */
-
-@media only screen and (min-width: 680px){
-    
-    .logo{
-        width: 400px;
-    }
-    
-    .logo img{
-        width: 100%;
-    }
-    
-    .contenedor-ppal{
-        width:636px;
-        height: 500px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 40px auto 80px;
-    }
-
-    .comunidad{
-        grid-column: 1/3;
-        padding: 20px 35px 35px 35px;
-    }
-
-    .comunidad h2.titulo{
-        font-size: 1.8em;
-    }
-
-    .comunidad h2.promocion{
-        font-size: 1.1em;
-    }
-
-    .comunidad p{
-        font-size: 1em;
-        line-height: 27px;
-        margin: 8px;
-    }
-
-    .subs-mensual{
-        padding: 20px 40px 40px 40px;
-        height: 270px;
-    }
-
-    .subs-mensual h2{
-        font-size: 1.1em;
-    }
-
-    .subs-mensual p{
-        font-size: 0.95em;
-    }
-
-    .nosotros{
-        height: 270px;
-        padding: 20px 40px 40px 40px;
-    }
-
-    /* ---- REGISTRO ---- */
-
-    .contenedor-registro{
-        width:636px;
-        height: 500px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 40px auto 80px;
-    }
-
-    .paquete{
-        grid-column: 1/3;
-        padding: 20px 35px 35px 35px;
-    }
-
-    .paquete h2.title_pack{
-        font-size: 1.8em;
-    }
-
-    .paquete h2.promo_registro{
-        font-size: 1.1em;
-    }
-
-    .paquete p{
-        font-size: 1em;
-        line-height: 27px;
-        margin: 8px;
-    }
-
-    .paquete_01{
-        padding: 20px 40px 40px 40px;
-        height: 270px;
-    }
-
-    .paquete_01 h2{
-        font-size: 1.1em;
-    }
-
-    .paquete_01 p{
-        font-size: 0.95em;
-    }
-
-    .paquete_02{
-        height: 270px;
-        padding: 20px 40px 40px 40px;
-    }
-
-    .paquete_02 h2{
-        font-size: 1.1em;
-    }
-
-     .paquete_02 p{
-        font-size: 0.95em;
-    }
-
-
-
-
-
-}
+/*# sourceMappingURL=style.css.map */

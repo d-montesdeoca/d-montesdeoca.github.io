@@ -1,0 +1,433 @@
+//Variables de tamaño
+$logo-size: 313px;
+
+//Variables de colores
+$color-fondo: rgb(232, 232, 240);
+$color-fondo2: rgb(27, 99, 117);
+$color-fondo2_2: rgb(236, 130, 60);
+$color-fondo2_3: rgb(48, 60, 123);
+$color-fondo3: rgb(34, 68, 80);
+$color-blanco: white;
+$color-titulo: rgb(0, 167, 228);
+$color-subtitulo: rgb(190, 190, 36);
+$color-subtitulo2: rgb(254, 254, 50);
+$color-parrafo1:rgb(59, 57, 87);
+$color-parrafo2: rgb(215, 215, 215);
+$color-boton: rgb(174, 174, 31);
+$color-boton2: rgb(130, 130, 26);
+$color-autor: blue;
+
+$color-registrofondo1: rgb(213, 113, 26);
+$color-fondoregistro2: rgb(176, 93, 20);
+$color-fondoregistro3:  rgb(25, 58, 97);
+$color-fondoregistro4:  rgb(29, 88, 159);
+$color-fondoregistro5: rgb(224, 143, 51);
+
+body{
+    background-color: $color-fondo;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+// MOBILE - index.hmtl
+
+.logo{
+    width: $logo-size;
+    margin: 70px auto 0;
+
+    img{
+        width: $logo-size;
+    }
+}
+
+.contenedor-ppal{
+    background-color: $color-blanco;
+    width: $logo-size;
+    height: 680px;
+    margin: 20px auto 70px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .comunidad{
+        padding: 8px 24px 24px 24px;
+        height: 230px;
+        box-sizing: border-box;
+
+        .titulo{
+            font-size: 1.5em;
+            color: $color-titulo;
+        }
+
+        .promocion{
+            color: $color-subtitulo;
+            font-size: 1em;
+            margin: 20px 0 10px 0;
+        }
+
+        p{
+            color: $color-parrafo1;
+            font-size: 0.86em;
+            line-height: 27px;
+            margin-top: 16px;
+        }
+    }
+
+    .subs-mensual{
+        background-color: $color-fondo2 ;
+        padding: 12px 24px 24px 24px;
+        height: 250px;
+        box-sizing: border-box;
+        color: $color-blanco;
+        animation-name: destaque-precio;
+        animation-duration: 5s;
+
+        @keyframes destaque-precio{
+            from{
+                background-color: $color-fondo2_2;
+            }
+    
+            to{
+                background-color: $color-fondo2;
+            }
+        }
+
+        h2{
+            font-size: 1em;
+            margin-bottom: 18px;
+        }
+
+        .precio{
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        p{
+            margin-top: 8px;
+        }
+
+        button{
+            margin-top: 14px;
+            background-color: $color-boton;
+            border-radius: 5px;
+            width: 100%;
+            height: 48px;
+            border-style: none;
+            color: $color-blanco;
+            font-size: 16px;
+            font-weight: 700;
+
+                &:hover{
+                    background-color: $color-boton2;
+                }
+
+            a{
+                text-decoration: none;
+                color: $color-blanco;
+            }
+        }
+    }
+
+    .nosotros{
+        background-color: $color-fondo3;
+        padding: 8px 24px 24px 24px;
+        height:230px;
+        box-sizing: border-box;
+        color: $color-parrafo2;
+        animation-name: destaque-precio2;
+        animation-duration: 15s;
+
+        @keyframes destaque-precio2{
+
+            from{
+                background-color: $color-fondo2_3;
+            }
+
+            to{
+                background-color: $color-fondo3;
+            }
+        }
+
+        h2{
+            font-size: 18px;
+        }
+
+        li{
+            font-size: 0.85em;
+            line-height: 20px;
+            font-weight: 400;
+            list-style: circle;
+        }
+    }
+}
+
+footer{
+    .autor{
+        font-size: 11px;
+        text-align: center;
+
+        a{
+            color: $color-autor;
+        }
+    }    
+}
+
+// MOBILE - registro.html
+
+.contenedor-registro{
+    background-color: $color-registrofondo1;
+    width: $logo-size;
+    height: 750px;
+    margin: 20px auto 70px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .paquete{
+        padding: 8px 24px 24px 24px;
+        height: 230px;
+        box-sizing: border-box;
+
+        .title_pack{
+            font-size: 2em;
+            color: $color-blanco;
+            margin: 30px 0 20px 0;
+        }
+
+        .promo_registro{
+            color: $color-subtitulo2;
+            font-size: 1em;
+            margin: 10px 0 10px 0;
+        }
+
+        p{
+            color: $color-blanco;
+            font-size: 1em;
+            line-height: 20px;
+            margin-top: 10px;
+        }
+    }
+
+    .paquete_01{
+        background-color: $color-fondoregistro2;
+        padding: 12px 24px 24px 24px;
+        height: 250px;
+        box-sizing: border-box;
+        color: $color-blanco;
+        animation-name: destaque-precio4;
+        animation-duration: 3s;
+        
+        @keyframes destaque-precio4 {
+            
+            from{
+                background-color: $color-fondoregistro5;
+            }
+
+            to{
+                background-color: $color-fondoregistro2;
+            }
+        }
+
+        h2{
+            font-size: 1.2em;
+            margin-bottom: 18px;
+        }
+
+        .precio{
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        p{
+            margin-top: 8px;
+        }
+
+        .btn-registro{
+            margin-top: 10px;
+            background-color: $color-blanco;
+            border-radius: 5px;
+            width: 100%;
+            height: 48px;
+            border-style: none;
+            color: $color-fondoregistro2;
+            font-size: 16px;
+            font-weight: 700;
+
+                &:hover{
+                    background-color: $color-fondo;
+                }
+        }
+
+    }
+
+    .paquete_02{
+        background-color: $color-fondoregistro3;
+        padding: 12px 24px 24px 24px;
+        height: 270px;
+        box-sizing: border-box;
+        color: $color-blanco;
+        animation-name: destaque-precio3;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+
+        @keyframes destaque-precio3{
+
+            from{
+                background-color: $color-fondoregistro4;
+            }
+
+            to{
+                background-color: $color-fondoregistro3;
+            }
+        }
+
+        h2{
+            font-size: 1.4em;
+            margin-bottom: 16px;
+        }
+
+        .precio{
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        p{
+            margin-top: 8px;
+        }
+
+        .btn-registro{
+            margin-top: 6px;
+            background-color: $color-blanco;
+            border-radius: 5px;
+            width: 100%;
+            height: 48px;
+            border-style: none;
+            color: $color-fondoregistro2;
+            font-size: 16px;
+            font-weight: 700;
+                &:hover{
+                    background-color: $color-fondo;
+                }
+        }
+    }
+}
+
+
+//DESKTOP
+
+@media only screen and (min-width: 680px){
+    
+    //index.html
+    .logo{
+        width: 400px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .contenedor-ppal{
+        width: 636px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 40px auto 80px;
+
+        .comunidad{
+            grid-column: 1/3;
+            padding: 20px 35px 35px 35px;
+
+            .titulo{
+                font-size: 1.8em;
+            }
+
+            .promocion{
+                font-size: 1.1em;
+            }
+
+            p{
+                font-size: 1em;
+                line-height: 27px;
+                margin: 8px;
+            }
+        }
+
+        .subs-mensual{
+            padding: 20px 40px 40px 40px;
+            height: 270px;
+
+            h2{
+                font-size: 1.1em;
+            }
+
+            p{
+                font-size: 0.95em;
+            }
+
+        }
+
+        .nosotros{
+            height: 270px;
+            padding: 20px 40px 40px 40px;
+        }
+
+    }
+
+    //registro.html
+    .contenedor-registro{
+        width:636px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 40px auto 80px;
+
+        .paquete{
+            grid-column: 1/3;
+            padding: 20px 35px 35px 35px;
+
+            .title_pack{
+                font-size: 1.8em;
+            }
+    
+            .promo_registro{
+                font-size: 1.1em;
+            }
+    
+            p{
+                font-size: 1em;
+                line-height: 27px;
+                margin: 8px;
+            }
+
+        }
+
+        .paquete_01{
+            padding: 20px 40px 40px 40px;
+            height: 270px;
+
+            h2{
+                font-size: 1.1em;
+            }
+
+            p{
+                font-size: 0.95em;
+            }
+
+
+        }
+
+        .paquete_02{
+            height: 270px;
+            padding: 20px 40px 40px 40px;
+
+            h2{
+                font-size: 1.1em;
+            }
+
+            p{
+                font-size: 0.95em;
+            }
+        }
+    }  
+
+}
